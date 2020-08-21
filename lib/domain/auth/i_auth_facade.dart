@@ -5,11 +5,11 @@ import 'value_objects.dart';
 
 abstract class IAuthFacade {
   Future<Either<AuthFailure, Unit>> registerWithEmailAndPassword({
-    @required EmailAdrdress emailAdrdress,
+    @required EmailAddress emailAdrdress,
     @required Password password,
   });
   Future<Either<AuthFailure, Unit>> signInWithEmailAndPassword({
-    @required EmailAdrdress emailAdrdress,
+    @required EmailAddress emailAdrdress,
     @required Password password,
   });
   Future<Either<AuthFailure, Unit>> signInWithGoogle();

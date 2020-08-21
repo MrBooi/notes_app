@@ -4,17 +4,17 @@ import 'package:notes_ddd_app/domain/core/failures.dart';
 import 'package:notes_ddd_app/domain/core/value_objects.dart';
 import 'package:notes_ddd_app/domain/core/value_validators.dart';
 
-class EmailAdrdress extends ValueObject<String> {
+class EmailAddress extends ValueObject<String> {
   final Either<ValueFailure<String>, String> value;
 
-  factory EmailAdrdress(String input) {
+  factory EmailAddress(String input) {
     assert(input != null);
-    return EmailAdrdress._(
+    return EmailAddress._(
       validateEmailAddress(input),
     );
   }
 
-  const EmailAdrdress._(this.value);
+  const EmailAddress._(this.value);
 }
 
 class Password extends ValueObject<String> {
