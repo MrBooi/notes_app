@@ -15,9 +15,6 @@ import 'domain/auth/i_auth_facade.dart';
 import 'infrastructure/auth/firebase_auth_facade.dart';
 import 'infrastructure/core/firebase_injectable_module.dart';
 
-/// adds generated dependencies
-/// to the provided [GetIt] instance
-
 GetIt $initGetIt(
   GetIt get, {
   String environment,
