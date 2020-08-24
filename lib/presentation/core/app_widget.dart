@@ -1,5 +1,8 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:notes_ddd_app/application/auth/auth_bloc.dart';
+import 'package:notes_ddd_app/presentation/routes/router.gr.dart';
 
 import '../../injection.dart';
 
@@ -16,7 +19,9 @@ class AppWidget extends StatelessWidget {
       child: MaterialApp(
         title: 'Notes',
         debugShowCheckedModeBanner: false,
-        builder: ExtendedNavigator(router: Router()),
+        builder: ExtendedNavigator<Router>(
+          router: Router(),
+        ),
         theme: ThemeData.light().copyWith(
           primaryColor: Colors.green[800],
           accentColor: Colors.blueAccent,

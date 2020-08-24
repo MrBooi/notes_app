@@ -23,10 +23,10 @@ class SignInForm extends StatelessWidget {
               ).show(context);
             },
             (_) {
-              ExtendedNavigator.of(context).replace(Routes.notesOverviewPage);
-              context
-                  .bloc<AuthBloc>()
-                  .add(const AuthEvent.authCheckRequested());
+              // ExtendedNavigator.of(context).replace(Routes.notesOverviewPage);
+              // context
+              //     .bloc<AuthBloc>()
+              //     .add(const AuthEvent.authCheckRequested());
             },
           ),
         );
