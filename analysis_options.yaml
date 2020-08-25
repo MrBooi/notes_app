@@ -6,3 +6,10 @@ analyzer:
     missing_return: error
     must_be_immutable: error
     sort_unnamed_constructors_first: ignore
+    directives_ordering: ignore
+    non_constant_identifier_names: ignore
+    unused_element: ignore
+    
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
